@@ -1588,37 +1588,52 @@ body {
           <div class="org-avatar org-avatar--ios">RG</div>
           <div>
             <div class="org-name">Raghav</div>
-            <div class="org-role">iOS Tech Lead — Code Review, TestFlight, Architecture</div>
+            <div class="org-role">iOS Architecture Support — PR Review + Unblocking</div>
           </div>
         </div>
-        <div class="org-success">"Success = every PR reviewed within 4 hours, 3 gate reviews conducted, TestFlight builds uploaded on schedule, zero architecture regressions."</div>
+        <div class="org-success">"Success = every Fareed PR reviewed within 4 hours. Architecture guardrails maintained. Fareed never blocked more than 2 hours on a technical question."</div>
         <ul class="org-deliverables">
-          <li>Merge existing branches (Home/Discover, CraftingVM) Day 0</li>
-          <li>Onboarding call with new developer</li>
-          <li>PR review within 4-hour SLA</li>
-          <li>TestFlight builds: Gate 1, Gate 2, RC</li>
-          <li>Architecture review at each gate</li>
+          <li>Review all Fareed PRs (4-hour SLA)</li>
+          <li>Unblock architecture questions on-demand</li>
+          <li>Ping before any BarsysEndpoint.swift or Route.swift changes</li>
+          <li>BLE integration test (3 physical devices required — blocked until hardware available)</li>
         </ul>
       </div>
 
-      <!-- New Dev -->
+      <!-- Fareed -->
       <div class="org-person" style="border-color: var(--green); border-width: 2px;">
         <div class="org-person-header">
-          <div class="org-avatar org-avatar--new">ND</div>
+          <div class="org-avatar org-avatar--new">FA</div>
           <div>
-            <div class="org-name">NEW DEV</div>
-            <div class="org-role">iOS Developer — YOU. All Screen Wiring.</div>
+            <div class="org-name">Fareed</div>
+            <div class="org-role">iOS Developer — New Repo, Cursor-generated (barsys-ark-new/)</div>
           </div>
         </div>
-        <div class="org-success">"Success = all 8 active flows wired to live APIs, all CRITICAL security fixes closed, and a TestFlight build that works E2E on a physical device."</div>
+        <div class="org-success">"Success = full app built from 15 Cursor scaffold prompts. All tabs wired to real API. Proxyman shows live network calls on every screen."</div>
         <ul class="org-deliverables">
-          <li>Day 0: Onboarding + Fix Gap 1 (first PR)</li>
-          <li>Day 1: Auth gaps 2-4 + all 12 CRITICAL security fixes</li>
-          <li>Day 2: Home + Discover wiring</li>
-          <li>Day 3: BarBot chat + vision + start Craft</li>
-          <li>Day 4: Complete Craft + Station + Profile</li>
-          <li>Day 5: Error Recovery + bug fixes + performance</li>
-          <li>Day 6: Code freeze support</li>
+          <li>Build from SCAFFOLD_PROMPTS.md — 15 prompts in order</li>
+          <li>Design system tokens → components → networking → screens</li>
+          <li>Reference HTML design files for every screen</li>
+          <li>Wait for Apar's audit before wiring 3 mismatch paths</li>
+          <li>Raghav reviews any Endpoint.swift / Route.swift changes</li>
+        </ul>
+      </div>
+
+      <!-- Apar -->
+      <div class="org-person">
+        <div class="org-person-header">
+          <div class="org-avatar org-avatar--new" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">AP</div>
+          <div>
+            <div class="org-name">Apar</div>
+            <div class="org-role">Endpoint Audit — iOS ↔ Backend (35 endpoints via Proxyman)</div>
+          </div>
+        </div>
+        <div class="org-success">"Success = all 35 endpoints verified, path mismatches flagged in Asana with exact correct paths, audit results posted by Apr 2 so Fareed can unblock 3 mismatch paths."</div>
+        <ul class="org-deliverables">
+          <li>Audit all 35 iOS endpoints via Proxyman</li>
+          <li>Flag path mismatches: cacheFavoriteRecipes, user-device-links, recordMadeDrink</li>
+          <li>Post results to Asana task comments by Apr 2</li>
+          <li>After audit: support Raghav on bug fixes if capacity allows</li>
         </ul>
       </div>
 
@@ -1664,15 +1679,15 @@ body {
           <div class="org-avatar org-avatar--design">ST</div>
           <div>
             <div class="org-name">Sterin</div>
-            <div class="org-role">Design — Remaining Screen Designs</div>
+            <div class="org-role">Design — F05 BLE + F03 BarBot HTML Audit · On leave Apr 3</div>
           </div>
         </div>
-        <div class="org-success">"Success = F04 Home, F05 BLE, and F08 Settings designs delivered by end of Day 0. Design questions answered within 2 hours."</div>
+        <div class="org-success">"Success = F05 BLE 2 remaining screens delivered + F03 BarBot HTML design audited and fixed by Apr 2. All work done before leave."</div>
         <ul class="org-deliverables">
-          <li>Deliver F04/F08 Home designs (Day 0)</li>
-          <li>Deliver F05 BLE designs (Day 0)</li>
-          <li>Deliver F08 Settings designs (Day 0)</li>
-          <li>Support design questions throughout sprint</li>
+          <li>F05 BLE: terminal failure state (3-retry) + AI Thinking cancel CTA</li>
+          <li>F03 BarBot HTML design: audit + fix all errors, deliver to Fareed by Apr 2</li>
+          <li>Fix HTML copy errors flagged by Thomas</li>
+          <li>⚠️ On leave Friday Apr 3 — all deliverables must be done by Apr 2</li>
         </ul>
       </div>
 
@@ -1682,14 +1697,14 @@ body {
           <div class="org-avatar org-avatar--design">RN</div>
           <div>
             <div class="org-name">Ragini</div>
-            <div class="org-role">Design — App Store Screenshots</div>
+            <div class="org-role">Design — F04 Home + F08 Profile + Copy Fixes</div>
           </div>
         </div>
-        <div class="org-success">"Success = App Store screenshots ready by Day 5. All marketing assets pixel-perfect."</div>
+        <div class="org-success">"Success = F04 Home + F08 Profile designs finalized for Fareed. HTML copy errors resolved with Thomas."</div>
         <ul class="org-deliverables">
-          <li>App Store screenshots (due Day 5)</li>
-          <li>Marketing asset preparation</li>
-          <li>F06 Station + F09 Error Recovery design support</li>
+          <li>Finalize F08 Profile &amp; Settings designs for Fareed</li>
+          <li>F04 Home screen designs — working with Thomas on copy fixes</li>
+          <li>UI and copy error resolution (ongoing with Thomas)</li>
         </ul>
       </div>
     </div>
@@ -1744,8 +1759,8 @@ body {
 
       <!-- Design Column -->
       <div class="state-col">
-        <div class="state-col-header state-col-header--amber">
-          <span class="status-dot" style="background:var(--amber)"></span> Design — 70%
+        <div class="state-col-header state-col-header--green">
+          <span class="status-dot" style="background:var(--green)"></span> Design — 95% (F05 BLE: 2 screens pending)
         </div>
         <div class="state-col-body">
           <div class="design-grid" style="margin-top:0;">
@@ -1761,13 +1776,13 @@ body {
               <span class="design-item-name">F03 BarBot</span>
               <span style="color:var(--green)">✓</span>
             </div>
-            <div class="design-item design-item--missing">
+            <div class="design-item design-item--done">
               <span class="design-item-name">F04/F08 Home</span>
-              <span style="color:var(--red); font-size:10px">NOT DELIVERED</span>
+              <span style="color:var(--green)">✓</span>
             </div>
-            <div class="design-item design-item--missing">
+            <div class="design-item design-item--done">
               <span class="design-item-name">F05 BLE</span>
-              <span style="color:var(--red); font-size:10px">NOT DELIVERED</span>
+              <span style="color:var(--amber); font-size:10px">2 screens pending</span>
             </div>
             <div class="design-item design-item--done">
               <span class="design-item-name">F06 Station</span>
@@ -1777,9 +1792,9 @@ body {
               <span class="design-item-name">F07 Discover</span>
               <span style="color:var(--green)">✓</span>
             </div>
-            <div class="design-item design-item--missing">
+            <div class="design-item design-item--done">
               <span class="design-item-name">F08 Settings</span>
-              <span style="color:var(--red); font-size:10px">NOT DELIVERED</span>
+              <span style="color:var(--green)">✓</span>
             </div>
             <div class="design-item design-item--done">
               <span class="design-item-name">F09 Error Recovery</span>
@@ -1787,7 +1802,7 @@ body {
             </div>
           </div>
           <div style="margin-top:12px; font-size:11px; color:var(--text-dim);">
-            <strong style="color:var(--amber);">⚠ 3 flows missing designs</strong> — must be delivered by Sterin on Day 0 to avoid blocking iOS wiring.
+            <strong style="color:var(--amber);">⚠ F05 BLE: 2 screens still pending</strong> — Sterin delivering terminal failure + AI Thinking cancel CTA by Apr 2. On leave Apr 3.
           </div>
         </div>
       </div>
@@ -1799,7 +1814,7 @@ body {
     <div class="reveal">
       <div class="section-label">Section 04</div>
       <div class="section-title">The Sprint Timeline</div>
-      <div class="section-desc">Seven days. Four gates. One App Store submission. Two-track development: Raghav owns functionality (Claude+Cursor, dummy screens), Fareed owns final UI (Cursor from v4.1 + Sterin/Ragini designs). Apar onboards as backup dev by Apr 1. Single source of truth: v4.1 document.                                                                                                 <span style="font-size:11px;color:#64748b;margin-left:8px;">Last updated: Wed Apr 01 17:56</span></div>
+      <div class="section-desc">Six days. Four gates. Code freeze Sat Apr 4 at 12PM. Fareed builds entire app from scratch in new Cursor-generated repo. Raghav owns architecture support + PR review. Apar running full endpoint audit (35 endpoints via Proxyman, due Apr 2). Single source of truth: CURSOR_BUILD_GUIDE.md.                                                                                                 </div>
     </div>
 
     <div class="sprint-progress reveal">
@@ -1817,7 +1832,7 @@ body {
       <div style="font-size:12px;font-weight:700;color:#C4A882;text-transform:uppercase;letter-spacing:2px;">Live Sprint Status</div>
       <div style="font-size:11px;color:#706E6A;margin-top:2px;">Wednesday, April 01, 2026 · Auto-updated from Asana</div>
     </div>
-    <span style="font-size:10px;color:#706E6A;background:#232220;border:1px solid #3D3C3A;padding:4px 10px;border-radius:20px;font-family:monospace;">Last synced: Wed Apr 01 · 17:56</span>
+    <span style="font-size:10px;color:#706E6A;background:#232220;border:1px solid #3D3C3A;padding:4px 10px;border-radius:20px;font-family:monospace;">Last synced: Wed Apr 01 · 18:00</span>
   </div>
   
 <div style="background:#232220;border:1px solid #3D3C3A;border-radius:8px;padding:14px;margin-bottom:16px;">
@@ -2148,7 +2163,7 @@ body {
           <div class="tl-task">Match Sterin F03 Figma all screens<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
         </div>
         <div class="tl-cell">
-          <div class="tl-task">RC bug fixes only<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span></div>
+          <div class="tl-task">RC bug fixes only<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span></div>
         </div>
 
         <!-- VOVA ROW -->
@@ -2241,8 +2256,8 @@ body {
           <div class="org-avatar org-avatar--design" style="width:24px;height:24px;font-size:9px;">RN</div>
           <div><div style="font-size:12px;">Ragini</div><div style="font-size:10px;color:var(--text-dim);">Design</div></div>
         </div>
-        <div class="tl-cell"><div class="tl-task">—<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span></div></div>
-        <div class="tl-cell"><div class="tl-task">—<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span></div></div>
+        <div class="tl-cell"><div class="tl-task">—<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span></div></div>
+        <div class="tl-cell"><div class="tl-task">—<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span></div></div>
         <div class="tl-cell">
           <div class="tl-task tl-task--design">F08 Profile &amp; Settings designs<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
         </div>
