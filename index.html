@@ -1614,7 +1614,7 @@ body {
           <li>Build from SCAFFOLD_PROMPTS.md — 15 prompts in order</li>
           <li>Design system tokens → components → networking → screens</li>
           <li>Reference HTML design files for every screen</li>
-          <li>Wait for Apar's audit before wiring 3 mismatch paths</li>
+          <li>Wait for Raghav's endpoint audit before wiring 3 mismatch paths</li>
           <li>Raghav reviews any Endpoint.swift / Route.swift changes</li>
         </ul>
       </div>
@@ -1625,15 +1625,15 @@ body {
           <div class="org-avatar org-avatar--new" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">AP</div>
           <div>
             <div class="org-name">Apar</div>
-            <div class="org-role">Endpoint Audit — iOS ↔ Backend (35 endpoints via Proxyman)</div>
+            <div class="org-role">iOS Co-Builder (India) — Building full app from Cursor ticket (same as Fareed)</div>
           </div>
         </div>
-        <div class="org-success">"Success = all 35 endpoints verified, path mismatches flagged in Asana with exact correct paths, audit results posted by Apr 2 so Fareed can unblock 3 mismatch paths."</div>
+        <div class="org-success">"Success = same as Fareed — full BarsysARK iOS app built via 15 Cursor scaffold prompts, BUILD SUCCEEDED, all 10 flows functional on simulator. Redirected from endpoint audit to correct approach Apr 2."</div>
         <ul class="org-deliverables">
-          <li>Audit all 35 iOS endpoints via Proxyman</li>
-          <li>Flag path mismatches: cacheFavoriteRecipes, user-device-links, recordMadeDrink</li>
-          <li>Post results to Asana task comments by Apr 2</li>
-          <li>After audit: support Raghav on bug fixes if capacity allows</li>
+          <li>Same ticket as Fareed: [FAREED + APAR] Build Full App with Cursor</li>
+          <li>15 scaffold prompts in order — design system → networking → screens</li>
+          <li>S1–S10 built, S11 blocked (waiting for Raghav endpoint audit)</li>
+          <li>S12 Final QA on simulator once build succeeds</li>
         </ul>
       </div>
 
@@ -1748,9 +1748,9 @@ body {
           <div class="state-item"><span class="check">✓</span> Networking core (APIClient, AuthInterceptor, TokenStore)</div>
           <div class="state-item"><span class="check">✓</span> All 46 API endpoints + domain models</div>
           <div class="state-item"><span class="warn">⚠</span> Screens being wired to live APIs (in progress)</div>
-          <div style="padding: 6px 0 4px; font-size:11px; font-weight:700; color:var(--amber); letter-spacing:0.5px;">ENDPOINT AUDIT (Apar — due Apr 2):</div>
+          <div style="padding: 6px 0 4px; font-size:11px; font-weight:700; color:var(--amber); letter-spacing:0.5px;">ENDPOINT AUDIT (Raghav — in progress):</div>
           <div class="state-item"><span class="warn">⚠</span> 3 known path mismatches: cacheFavoriteRecipes · user-device-links · recordMadeDrink</div>
-          <div class="state-item"><span class="warn">⚠</span> Fareed holds on wiring those 3 until Apar posts audit results</div>
+          <div class="state-item"><span class="warn">⚠</span> Fareed + Apar hold on wiring those 3 until Raghav posts audit results</div>
         </div>
       </div>
 
@@ -1811,7 +1811,7 @@ body {
     <div class="reveal">
       <div class="section-label">Section 04</div>
       <div class="section-title">The Sprint Timeline</div>
-      <div class="section-desc">Six days. Four gates. Code freeze Sat Apr 4 at 12PM. Fareed builds entire app from scratch in new Cursor-generated repo. Raghav owns architecture support + PR review. Apar running full endpoint audit (35 endpoints via Proxyman, due Apr 2). Single source of truth: CURSOR_BUILD_GUIDE.md.                                                                                                 </div>
+      <div class="section-desc">Six days. Four gates. Code freeze Sat Apr 4 at 12PM. Fareed + Apar both building the full app from same Cursor ticket — parallel builds, same 15 scaffold prompts. Raghav is Tech Lead: owns endpoint audit, backend coordination, PR review. Single source of truth: CURSOR_BUILD_GUIDE.md.</div>
     </div>
 
     <div class="sprint-progress reveal">
@@ -1910,9 +1910,9 @@ body {
       display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">AP</div>
     <div style="flex:1;min-width:0;">
       <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Apar</div>
-      <div style="font-size:10px;color:#706E6A;">Endpoint Audit · iOS ↔ Backend</div>
+      <div style="font-size:10px;color:#706E6A;">iOS Co-Builder (India)</div>
     </div>
-    <span style="background:#1e1e1c;color:#706E6A;border:1px solid #706E6A33;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">⚪ STANDBY</span>
+    <span style="background:#3d2e00;color:#fb923c;border:1px solid #7a5c00;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🔄 IN PROGRESS</span>
   </div>
   <div style="display:flex;align-items:center;gap:8px;">
     <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
@@ -2116,37 +2116,37 @@ body {
           <div class="tl-task tl-task--gate">Code freeze 12 PM — RC bugs only<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
         </div>
 
-        <!-- APAR ROW — Endpoint Audit -->
+        <!-- APAR ROW — iOS Co-Builder (India) — same ticket as Fareed -->
         <div class="tl-row-label">
           <div class="org-avatar org-avatar--new" style="width:24px;height:24px;font-size:9px;background:linear-gradient(135deg,#8B5CF6,#6D28D9)">AP</div>
-          <div><div style="font-size:12px;">Apar</div><div style="font-size:10px;color:var(--text-dim);">Endpoint Audit</div></div>
+          <div><div style="font-size:12px;">Apar</div><div style="font-size:10px;color:var(--text-dim);">iOS Co-Builder</div></div>
         </div>
         <div class="tl-cell">
-          <div class="tl-task tl-task--main">Read docs + setup tools<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
+          <div class="tl-task tl-task--main">Onboarding + repo access setup<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
+          <div class="tl-task">Read docs + set up tools<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
+        </div>
+        <div class="tl-cell">
+          <div class="tl-task tl-task--main">Set up Cursor + build workflow<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
           <div class="tl-task">Onboarding call w/ Raghav<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
-          <div class="tl-task">Set up Cursor + Claude workflow<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
         </div>
         <div class="tl-cell">
-          <div class="tl-task tl-task--main">Codebase walkthrough w/ Raghav<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
-          <div class="tl-task">Replicate F01 in separate repo<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
-          <div class="tl-task">Learn Swift + SwiftData patterns<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
+          <div class="tl-task tl-task--main">Built wrong sample → redirected Apr 2<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
+          <div class="tl-task" style="font-size:10px;color:#A09E99;">Corrected: start from Prompt 1 with barsys-ark-new zip</div>
         </div>
         <div class="tl-cell">
-          <div class="tl-task tl-task--main">Shadow Raghav's functionality work<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
-          <div class="tl-task">Tech stack familiarization<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
+          <div class="tl-task tl-task--critical">Build BarsysARK iOS — Cursor new repo (15 scaffold prompts)<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#3d2e00;color:#fb923c;border:1px solid #7a5c00">🔄</span></div>
+          <div class="tl-task" style="font-size:10px;color:#A09E99;">Same ticket as Fareed · run SCAFFOLD_PROMPTS.md in order · Raghav reviews PRs</div>
         </div>
         <div class="tl-cell">
-          <div class="tl-task tl-task--gate">Fully onboarded ✓<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
-          <div class="tl-task">First independent contribution<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1a4731;color:#4ade80;border:1px solid #2d6a30">✅</span></div>
+          <div class="tl-task tl-task--critical">Build BarsysARK iOS — Cursor new repo (in progress)<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#3d2e00;color:#fb923c;border:1px solid #7a5c00">🔄</span></div>
+          <div class="tl-task" style="font-size:10px;color:#A09E99;">Wait for Raghav endpoint audit before wiring 3 mismatch paths</div>
         </div>
         <div class="tl-cell">
-          <div class="tl-task tl-task--main">Full endpoint audit — iOS ↔ Backend<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#3d2e00;color:#fb923c;border:1px solid #7a5c00">🔄</span></div>
-          <div class="tl-task">35 endpoints · Proxyman · flag path mismatches<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
-          <div class="tl-task">BarBot audit — verify chat live e2e<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
+          <div class="tl-task tl-task--critical">Build BarsysARK iOS — Cursor new repo (in progress)<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
         </div>
         <div class="tl-cell">
-          <div class="tl-task tl-task--main">Post-audit: support Raghav on bug fixes<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
-          <div class="tl-task">Post results to Asana task comments<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
+          <div class="tl-task tl-task--main">Show working build — Proxyman confirms live API calls<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
+          <div class="tl-task">RC bug fixes only<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#1e1e1c;color:#706E6A;border:1px solid #3D3C3A">⬜</span></div>
         </div>
         <div class="tl-cell">
           <div class="tl-task">RC bug fixes only<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span><span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;"></span></div>
@@ -3262,7 +3262,7 @@ body {
             <tr><td style="color:var(--red); font-weight:600;">BLE integration bugs</td><td>BLE integration test blocked until all 3 physical devices available. Raghav owns once unblocked.</td><td>Raghav</td></tr>
             <tr><td style="color:var(--red); font-weight:600;">App Store rejection</td><td>Day 6 is buffer day. Pre-check Apple guidelines Day 5. Privacy manifest ready.</td><td>Mayank</td></tr>
             <tr><td style="color:var(--amber); font-weight:600;">Sterin F03/F05 late (on leave Apr 3)</td><td>F03 HTML audit + F05 BLE 2 screens must land by Apr 2. Fareed holds on BarBot prompt until F03 delivered.</td><td>Mayank</td></tr>
-            <tr><td style="color:var(--amber); font-weight:600;">Apar audit delayed past Apr 2</td><td>Fareed skips 3 mismatch paths and builds around them. Unblock post-freeze if needed.</td><td>Mayank</td></tr>
+            <tr><td style="color:var(--amber); font-weight:600;">Raghav endpoint audit delayed</td><td>Fareed + Apar skip 3 mismatch paths and build around them. S11 Station Mgmt stays blocked until confirmed.</td><td>Mayank</td></tr>
             <tr><td style="color:var(--amber); font-weight:600;">Bond AI regression</td><td>Harsh validates accuracy with live iOS traffic. Rollback plan: pin last-known-good model.</td><td>Harsh</td></tr>
           </tbody>
         </table>
@@ -3727,6 +3727,6 @@ document.querySelectorAll('.api-list').forEach(list => {
 });
 </script>
 
-<!-- PM-MONITOR: Last updated Apr 02 19:00 — Raghav role updated to Tech Lead, Fareed + Apar both on same Cursor build ticket
+<!-- PM-MONITOR: Last updated Apr 02 19:30 — Apar row corrected to iOS Co-Builder (same Cursor ticket as Fareed), all endpoint audit references updated to Raghav
 </body>
 </html>
