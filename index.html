@@ -1609,13 +1609,13 @@ body {
             <div class="org-role">iOS Developer — New Repo, Cursor-generated (barsys-ark-new/)</div>
           </div>
         </div>
-        <div class="org-success">"Success = full app built from 15 Cursor scaffold prompts. All tabs wired to real API. Proxyman shows live network calls on every screen."</div>
+        <div class="org-success">"BUILD SUCCEEDED — 88 Swift files, ~15.9K lines, 0 violations as of Apr 2. All core flows complete. Final QA + device test remaining."</div>
         <ul class="org-deliverables">
-          <li>Build from SCAFFOLD_PROMPTS.md — 15 prompts in order</li>
-          <li>Design system tokens → components → networking → screens</li>
-          <li>Reference HTML design files for every screen</li>
-          <li>Wait for Apar's audit before wiring 3 mismatch paths</li>
-          <li>Raghav reviews any Endpoint.swift / Route.swift changes</li>
+          <li>✅ Design system, networking, auth, FTUE, Home, Discover, RecipeDetail, Profile, Craft, BLE stub</li>
+          <li>🔄 BarBot (80%) — waiting on Sterin F03 HTML delivery</li>
+          <li>⛔ S11 Station Management — blocked on Raghav's endpoint audit (3 mismatch paths)</li>
+          <li>⬜ S12 Final QA + device testing</li>
+          <li>Raghav reviews any Endpoint.swift / Route.swift changes before merge</li>
         </ul>
       </div>
 
@@ -1625,15 +1625,15 @@ body {
           <div class="org-avatar org-avatar--new" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">AP</div>
           <div>
             <div class="org-name">Apar</div>
-            <div class="org-role">Endpoint Audit — iOS ↔ Backend (35 endpoints via Proxyman)</div>
+            <div class="org-role">iOS Co-Builder — Building app with Fareed in Cursor (barsys-ark-new/)</div>
           </div>
         </div>
-        <div class="org-success">"Success = all 35 endpoints verified, path mismatches flagged in Asana with exact correct paths, audit results posted by Apr 2 so Fareed can unblock 3 mismatch paths."</div>
+        <div class="org-success">"Success = Fareed's Cursor build reaches full completion. All 15 prompts done. App runs clean on device."</div>
         <ul class="org-deliverables">
-          <li>Audit all 35 iOS endpoints via Proxyman</li>
-          <li>Flag path mismatches: cacheFavoriteRecipes, user-device-links, recordMadeDrink</li>
-          <li>Post results to Asana task comments by Apr 2</li>
-          <li>After audit: support Raghav on bug fixes if capacity allows</li>
+          <li>Co-building full app with Fareed using SCAFFOLD_PROMPTS.md</li>
+          <li>Auth paths confirmed live Apr 2 — send-code, verify-code, sso/apple, sso/google</li>
+          <li>3 mismatch paths (cacheFavoriteRecipes, user-device-links, recordMadeDrink) — hold until Raghav audit completes</li>
+          <li>S11 Station Management blocked pending Raghav's endpoint audit</li>
         </ul>
       </div>
 
@@ -1748,7 +1748,7 @@ body {
           <div class="state-item"><span class="check">✓</span> Networking core (APIClient, AuthInterceptor, TokenStore)</div>
           <div class="state-item"><span class="check">✓</span> All 46 API endpoints + domain models</div>
           <div class="state-item"><span class="warn">⚠</span> Screens being wired to live APIs (in progress)</div>
-          <div style="padding: 6px 0 4px; font-size:11px; font-weight:700; color:var(--amber); letter-spacing:0.5px;">ENDPOINT AUDIT (Apar — due Apr 2):</div>
+          <div style="padding: 6px 0 4px; font-size:11px; font-weight:700; color:var(--amber); letter-spacing:0.5px;">ENDPOINT AUDIT (Raghav — in progress Apr 2):</div>
           <div class="state-item"><span class="warn">⚠</span> 3 known path mismatches: cacheFavoriteRecipes · user-device-links · recordMadeDrink</div>
           <div class="state-item"><span class="warn">⚠</span> Fareed holds on wiring those 3 until Apar posts audit results</div>
         </div>
@@ -1811,15 +1811,15 @@ body {
     <div class="reveal">
       <div class="section-label">Section 04</div>
       <div class="section-title">The Sprint Timeline</div>
-      <div class="section-desc">Six days. Four gates. Code freeze Sat Apr 4 at 12PM. Fareed builds entire app from scratch in new Cursor-generated repo. Raghav owns architecture support + PR review. Apar running full endpoint audit (35 endpoints via Proxyman, due Apr 2). Single source of truth: CURSOR_BUILD_GUIDE.md.                                                                                                 </div>
+      <div class="section-desc">Six days. Four gates. Code freeze Sat Apr 4 at 12PM. Fareed is primary iOS developer — BUILD SUCCEEDED, 88 files, ~87% of app complete as of Apr 2. Apar is co-builder supporting Fareed in Cursor. Raghav owns architecture support, endpoint audit, and PR review. Single source of truth: Asana board + CURSOR_BUILD_GUIDE.md.</div>
     </div>
 
     <div class="sprint-progress reveal">
       <span class="sprint-progress-label">Sprint Progress</span>
       <div class="sprint-progress-bar">
-        <div class="sprint-progress-fill" style="width: 11%"></div>
+        <div class="sprint-progress-fill" style="width: 62%"></div>
       </div>
-      <span class="sprint-progress-pct">DAY 4 · 11%</span>
+      <span class="sprint-progress-pct">DAY 4 · 62%</span>
     </div>
 
     <!-- LIVE-STATUS-START -->
@@ -1835,12 +1835,12 @@ body {
 <div style="background:#232220;border:1px solid #3D3C3A;border-radius:8px;padding:14px;margin-bottom:16px;">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
     <span style="font-size:11px;font-weight:600;color:#A09E99;text-transform:uppercase;letter-spacing:1px;">Sprint Progress — Day 4 of 6</span>
-    <span style="font-size:14px;font-weight:800;color:#C4A882;font-family:monospace;">11% Complete</span>
+    <span style="font-size:14px;font-weight:800;color:#C4A882;font-family:monospace;">62% Complete</span>
   </div>
   <div style="height:8px;background:#2A2927;border-radius:4px;overflow:hidden;margin-bottom:8px;">
-    <div style="width:11%;height:100%;background:linear-gradient(90deg,#01696F,#C4A882);border-radius:4px;transition:width 0.5s;"></div>
+    <div style="width:62%;height:100%;background:linear-gradient(90deg,#01696F,#C4A882);border-radius:4px;transition:width 0.5s;"></div>
   </div>
-  <div style="font-family:monospace;font-size:11px;color:#4CAF50;letter-spacing:1px;">██░░░░░░░░░░░░░░░░░░ 11%</div>
+  <div style="font-family:monospace;font-size:11px;color:#4CAF50;letter-spacing:1px;">████████████░░░░░░░░ 62%</div>
 </div>
   
 <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
@@ -2106,7 +2106,7 @@ body {
         </div>
         <div class="tl-cell">
           <div class="tl-task tl-task--critical">Build BarsysARK iOS — Cursor new repo (in progress)<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#3d2e00;color:#fb923c;border:1px solid #7a5c00">🔄</span></div>
-          <div class="tl-task" style="font-size:10px;color:#A09E99;">Wait for Apar audit before wiring 3 mismatch paths · wait for Sterin F03 HTML</div>
+          <div class="tl-task" style="font-size:10px;color:#A09E99;">Wait for Raghav endpoint audit before wiring 3 mismatch paths · wait for Sterin F03 HTML</div>
         </div>
         <div class="tl-cell">
           <div class="tl-task tl-task--critical">Build BarsysARK iOS — Cursor new repo (in progress)<span style="font-size:9px;padding:1px 5px;border-radius:3px;margin-left:5px;vertical-align:middle;background:#3d2e00;color:#fb923c;border:1px solid #7a5c00">🔄</span></div>
@@ -3727,6 +3727,6 @@ document.querySelectorAll('.api-list').forEach(list => {
 });
 </script>
 
-<!-- PM-MONITOR: Last updated Apr 02 12:00 -->
+<!-- PM-MONITOR: Last updated Apr 02 16:00 -->
 </body>
 </html>
