@@ -1817,9 +1817,9 @@ body {
     <div class="sprint-progress reveal">
       <span class="sprint-progress-label">Sprint Progress</span>
       <div class="sprint-progress-bar">
-        <div class="sprint-progress-fill" style="width: 11%"></div>
+        <div class="sprint-progress-fill" style="width: 45%"></div>
       </div>
-      <span class="sprint-progress-pct">DAY 6 · 11%</span>
+      <span class="sprint-progress-pct">POST-SPRINT · 45%</span>
     </div>
 
     <!-- LIVE-STATUS-START -->
@@ -1827,203 +1827,292 @@ body {
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
     <div>
       <div style="font-size:12px;font-weight:700;color:#C4A882;text-transform:uppercase;letter-spacing:2px;">Live Sprint Status</div>
-      <div style="font-size:11px;color:#706E6A;margin-top:2px;">Sunday, April 05, 2026 · Auto-updated from Asana</div>
+      <div style="font-size:11px;color:#706E6A;margin-top:2px;">Sunday, April 05, 2026 · Updated from Slack device test + Asana</div>
     </div>
-    <span style="font-size:10px;color:#706E6A;background:#232220;border:1px solid #3D3C3A;padding:4px 10px;border-radius:20px;font-family:monospace;">Last synced: Sun Apr 05 · 16:04</span>
+    <span style="font-size:10px;color:#706E6A;background:#232220;border:1px solid #3D3C3A;padding:4px 10px;border-radius:20px;font-family:monospace;">Last synced: Sun Apr 05 · 21:00</span>
   </div>
-  
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:8px;padding:14px;margin-bottom:16px;">
-  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
-    <span style="font-size:11px;font-weight:600;color:#A09E99;text-transform:uppercase;letter-spacing:1px;">Sprint Progress — Day 6 of 6</span>
-    <span style="font-size:14px;font-weight:800;color:#C4A882;font-family:monospace;">11% Complete</span>
+
+  <!-- POST-SPRINT ALERT -->
+  <div style="background:rgba(244,67,54,0.08);border:1px solid rgba(244,67,54,0.3);border-left:3px solid #F44336;border-radius:8px;padding:14px 16px;margin-bottom:16px;">
+    <div style="font-size:11px;font-weight:700;color:#F44336;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px;">⚠ Sprint Overrun — April 4 Deadline Missed</div>
+    <div style="font-size:12px;color:#A09E99;line-height:1.6;">TestFlight not submitted. Gate 3 not achieved. Raghav completed physical device test on April 5 — Google SSO + CI pipeline resolved, but Apple SSO (signing config), BarBot/Craft/My Bar (Coming Soon), recipe detail routing, and BLE device detection are all still blocked. <strong style="color:#E8E6E1;">Audit report: <a href="https://mayankbarsys.github.io/barsys-ark-ios-audit/" style="color:#C4A882;">mayankbarsys.github.io/barsys-ark-ios-audit</a></strong></div>
   </div>
-  <div style="height:8px;background:#2A2927;border-radius:4px;overflow:hidden;margin-bottom:8px;">
-    <div style="width:11%;height:100%;background:linear-gradient(90deg,#01696F,#C4A882);border-radius:4px;transition:width 0.5s;"></div>
+
+  <!-- OVERALL PROGRESS -->
+  <div style="background:#232220;border:1px solid #3D3C3A;border-radius:8px;padding:14px;margin-bottom:16px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
+      <span style="font-size:11px;font-weight:600;color:#A09E99;text-transform:uppercase;letter-spacing:1px;">Overall Completion — Post Sprint Day 6</span>
+      <span style="font-size:14px;font-weight:800;color:#C4A882;font-family:monospace;">45% Complete</span>
+    </div>
+    <div style="height:8px;background:#2A2927;border-radius:4px;overflow:hidden;margin-bottom:8px;">
+      <div style="width:45%;height:100%;background:linear-gradient(90deg,#01696F,#C4A882);border-radius:4px;transition:width 0.5s;"></div>
+    </div>
+    <div style="font-family:monospace;font-size:11px;color:#C4A882;letter-spacing:1px;">█████████░░░░░░░░░░░ 45%</div>
   </div>
-  <div style="font-family:monospace;font-size:11px;color:#4CAF50;letter-spacing:1px;">██░░░░░░░░░░░░░░░░░░ 11%</div>
-</div>
-  
-<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
-  <div style="background:#1a4731;border:1px solid #2d6a30;border-radius:8px;padding:14px;text-align:center;">
-    <div style="font-size:26px;font-weight:800;color:#4CAF50;font-family:monospace;">4</div>
-    <div style="font-size:10px;color:#4CAF50;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;">Done</div>
+
+  <!-- TASK COUNTS -->
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px;">
+    <div style="background:#1a4731;border:1px solid #2d6a30;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:26px;font-weight:800;color:#4CAF50;font-family:monospace;">10</div>
+      <div style="font-size:10px;color:#4CAF50;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;">Done</div>
+    </div>
+    <div style="background:#3d2e00;border:1px solid #7a5c00;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:26px;font-weight:800;color:#FF9800;font-family:monospace;">6</div>
+      <div style="font-size:10px;color:#FF9800;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;">Active</div>
+    </div>
+    <div style="background:#4a1c1c;border:1px solid #7a1f1a;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:26px;font-weight:800;color:#F44336;font-family:monospace;">6</div>
+      <div style="font-size:10px;color:#F44336;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;">Blocked</div>
+    </div>
+    <div style="background:#1e1e1c;border:1px solid #3D3C3A;border-radius:8px;padding:14px;text-align:center;">
+      <div style="font-size:26px;font-weight:800;color:#706E6A;font-family:monospace;">7</div>
+      <div style="font-size:10px;color:#706E6A;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;">To Do</div>
+    </div>
   </div>
-  <div style="background:#3d2e00;border:1px solid #7a5c00;border-radius:8px;padding:14px;text-align:center;">
-    <div style="font-size:26px;font-weight:800;color:#FF9800;font-family:monospace;">13</div>
-    <div style="font-size:10px;color:#FF9800;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;">Active</div>
+
+  <!-- SCREEN COVERAGE -->
+  <div style="background:#232220;border:1px solid #3D3C3A;border-radius:8px;padding:14px;margin-bottom:16px;">
+    <div style="font-size:11px;font-weight:600;color:#A09E99;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">iOS Screen Coverage — Design vs Build (F01–F10)</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F01 Auth & Onboarding</span><span style="font-size:11px;font-weight:600;color:#4CAF50;">74%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:74%;height:100%;background:#4CAF50;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F02 Crafting Flow</span><span style="font-size:11px;font-weight:600;color:#F44336;">0%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:0%;height:100%;background:#F44336;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F03 BarBot AI</span><span style="font-size:11px;font-weight:600;color:#F44336;">0%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:0%;height:100%;background:#F44336;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F04 Home Tab</span><span style="font-size:11px;font-weight:600;color:#FF9800;">20%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:20%;height:100%;background:#FF9800;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F05 Recipe Detail</span><span style="font-size:11px;font-weight:600;color:#F44336;">0%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:0%;height:100%;background:#F44336;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F06 Crafting Session</span><span style="font-size:11px;font-weight:600;color:#F44336;">0%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:0%;height:100%;background:#F44336;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F07 Discover</span><span style="font-size:11px;font-weight:600;color:#FF9800;">24%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:24%;height:100%;background:#FF9800;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F08 Profile</span><span style="font-size:11px;font-weight:600;color:#F44336;">5%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:5%;height:100%;background:#F44336;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F09 Error States</span><span style="font-size:11px;font-weight:600;color:#F44336;">5%</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:5%;height:100%;background:#F44336;border-radius:2px;"></div></div>
+      </div>
+      <div>
+        <div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:11px;color:#A09E99;">F10 Hardware / BLE</span><span style="font-size:11px;font-weight:600;color:#706E6A;">N/A</span></div>
+        <div style="height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:0%;height:100%;background:#706E6A;border-radius:2px;"></div></div>
+      </div>
+    </div>
+    <div style="margin-top:12px;padding-top:10px;border-top:1px solid #3D3C3A;display:flex;justify-content:space-between;align-items:center;">
+      <span style="font-size:11px;color:#706E6A;">~45 of 200 design screens working correctly</span>
+      <span style="font-size:12px;font-weight:700;color:#F44336;font-family:monospace;">22% screen completion</span>
+    </div>
   </div>
-  <div style="background:#4a1c1c;border:1px solid #7a1f1a;border-radius:8px;padding:14px;text-align:center;">
-    <div style="font-size:26px;font-weight:800;color:#F44336;font-family:monospace;">1</div>
-    <div style="font-size:10px;color:#F44336;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;">Blocked</div>
+
+  <!-- ACTIVE BLOCKERS -->
+  <div style="background:rgba(244,67,54,0.06);border:1px solid rgba(244,67,54,0.2);border-radius:8px;padding:14px;margin-bottom:16px;">
+    <div style="font-size:11px;font-weight:700;color:#F44336;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;">🚫 Active Blockers — TestFlight Blocked</div>
+    <div style="display:flex;flex-direction:column;gap:6px;">
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 8px;background:rgba(244,67,54,0.08);border-radius:4px;border:1px solid rgba(244,67,54,0.2);">
+        <span style="color:#F44336;font-size:11px;flex-shrink:0;">●</span>
+        <span style="font-size:11px;color:#A09E99;line-height:1.4;"><strong style="color:#E8E6E1;">Apple SSO — 401 on device</strong> · Bundle ID mismatch: Fareed using <code style="background:#1e1e1c;padding:1px 4px;border-radius:3px;">com.fareed.barsysark</code> · Must change to <code style="background:#1e1e1c;padding:1px 4px;border-radius:3px;">io.barsys.ark</code> + sign with Barsys LLC team · Action: Fareed</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 8px;background:rgba(244,67,54,0.08);border-radius:4px;border:1px solid rgba(244,67,54,0.2);">
+        <span style="color:#F44336;font-size:11px;flex-shrink:0;">●</span>
+        <span style="font-size:11px;color:#A09E99;line-height:1.4;"><strong style="color:#E8E6E1;">BarBot + Craft + My Bar = Coming Soon</strong> · 3 of 5 primary tabs are placeholder stubs · Routing fix needed in <code style="background:#1e1e1c;padding:1px 4px;border-radius:3px;">V2MainTabView.swift</code> · Action: Fareed</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 8px;background:rgba(244,67,54,0.08);border-radius:4px;border:1px solid rgba(244,67,54,0.2);">
+        <span style="color:#F44336;font-size:11px;flex-shrink:0;">●</span>
+        <span style="font-size:11px;color:#A09E99;line-height:1.4;"><strong style="color:#E8E6E1;">Network error fires on every Home load</strong> · <code style="background:#1e1e1c;padding:1px 4px;border-radius:3px;">fetchCacheRecipes</code> task cancelled on tab switch → triggers global error state · Action: Fareed</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 8px;background:rgba(244,67,54,0.08);border-radius:4px;border:1px solid rgba(244,67,54,0.2);">
+        <span style="color:#F44336;font-size:11px;flex-shrink:0;">●</span>
+        <span style="font-size:11px;color:#A09E99;line-height:1.4;"><strong style="color:#E8E6E1;">Recipe detail from tiles missing content</strong> · Ingredients, description, story absent from Home + Discover tile taps · See All path works correctly · Action: Fareed</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 8px;background:rgba(244,67,54,0.08);border-radius:4px;border:1px solid rgba(244,67,54,0.2);">
+        <span style="color:#F44336;font-size:11px;flex-shrink:0;">●</span>
+        <span style="font-size:11px;color:#A09E99;line-height:1.4;"><strong style="color:#E8E6E1;">BLE — no devices detected</strong> · All 3 hardware devices ON during Raghav's test, none detected by app · Action: Raghav + Fareed</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:8px;padding:6px 8px;background:rgba(244,67,54,0.08);border-radius:4px;border:1px solid rgba(244,67,54,0.2);">
+        <span style="color:#F44336;font-size:11px;flex-shrink:0;">●</span>
+        <span style="font-size:11px;color:#A09E99;line-height:1.4;"><strong style="color:#E8E6E1;">Profile edit non-functional</strong> · Edit icons unresponsive on device · Drink history + My Stations hardcoded · Action: Fareed</span>
+      </div>
+    </div>
   </div>
-  <div style="background:#1e1e1c;border:1px solid #3D3C3A;border-radius:8px;padding:14px;text-align:center;">
-    <div style="font-size:26px;font-weight:800;color:#706E6A;font-family:monospace;">11</div>
-    <div style="font-size:10px;color:#706E6A;text-transform:uppercase;letter-spacing:1.5px;margin-top:3px;">To Do</div>
+
+  <!-- RESOLVED SINCE LAST UPDATE -->
+  <div style="background:rgba(76,175,80,0.06);border:1px solid rgba(76,175,80,0.2);border-radius:8px;padding:14px;margin-bottom:16px;">
+    <div style="font-size:11px;font-weight:700;color:#4CAF50;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px;">✅ Resolved Since Last Update (Apr 5 Device Test)</div>
+    <div style="display:flex;flex-direction:column;gap:5px;">
+      <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#A09E99;"><span style="color:#4CAF50;">✓</span> CI pipeline (GoogleService-Info.plist) — decode step added to <code style="background:#1e1e1c;padding:1px 4px;border-radius:3px;">testflight-deploy.yml</code> by Raghav</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#A09E99;"><span style="color:#4CAF50;">✓</span> Google SSO — OAuth client ID updated, confirmed working on device</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#A09E99;"><span style="color:#4CAF50;">✓</span> Apple SSO body — now sends <code style="background:#1e1e1c;padding:1px 4px;border-radius:3px;">id_token</code> only (code fix correct; 401 is signing config only)</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#A09E99;"><span style="color:#4CAF50;">✓</span> Home — Made For You: confirmed loading real staging data</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#A09E99;"><span style="color:#4CAF50;">✓</span> Home — Cocktail of the Day: confirmed loading real staging data</div>
+      <div style="display:flex;align-items:center;gap:8px;font-size:11px;color:#A09E99;"><span style="color:#4CAF50;">✓</span> Discover — Catalogue, Search, Filters: all confirmed working on device</div>
+    </div>
   </div>
-</div>
+
+  <!-- TEAM CARDS -->
   <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;">
-    
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div class="org-avatar--ios" style="width:32px;height:32px;font-size:11px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">RG</div>
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Raghav</div>
-      <div style="font-size:10px;color:#706E6A;">Architecture Support · PR Review</div>
-    </div>
-    <span style="background:#4a1c1c;color:#F44336;border:1px solid #F4433633;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🔴 BLOCKED</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
-      <div style="width:0%;height:100%;background:#F44336;border-radius:2px;transition:width 0.5s;"></div>
-    </div>
-    <span style="font-size:10px;font-weight:700;color:#F44336;font-family:monospace;white-space:nowrap;">0/4 (0%)</span>
-  </div>
-  <div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(244,67,54,0.10);border:1px solid #7a1f1a;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#F44336;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">BLE integration test — all 3 physical devices required before ship</span><span style="background:#4a1c1c;color:#F44336;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🚫 Blocked</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Delete DiscoverViewModel.swift — dead code, never called, wrong model</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Tech Lead — Endpoint Audit + Backend Coordination + PR Review</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Full Endpoint Audit — iOS ↔ Backend</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div></div>
-</div>
 
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div class="org-avatar--new" style="width:32px;height:32px;font-size:11px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">FA</div>
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Fareed</div>
-      <div style="font-size:10px;color:#706E6A;">iOS · New Repo (Cursor-generated)</div>
+    <!-- RAGHAV -->
+    <div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="org-avatar--ios" style="width:32px;height:32px;font-size:11px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">RG</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Raghav</div>
+          <div style="font-size:10px;color:#706E6A;">Architecture · Device Test · SSO Fixes</div>
+        </div>
+        <span style="background:#3d2e00;color:#FF9800;border:1px solid #FF980033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🟡 ACTIVE</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:75%;height:100%;background:#FF9800;border-radius:2px;"></div></div>
+        <span style="font-size:10px;font-weight:700;color:#FF9800;font-family:monospace;white-space:nowrap;">3/4 (75%)</span>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(76,175,80,0.10);border:1px solid #2d6a30;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF50;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Google SSO — OAuth client ID cherry-picked + confirmed on device</span><span style="background:#1a4731;color:#4CAF50;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">✅ Done</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(76,175,80,0.10);border:1px solid #2d6a30;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF50;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Apple SSO body fix — id_token only, cherry-picked to branch</span><span style="background:#1a4731;color:#4CAF50;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">✅ Done</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(76,175,80,0.10);border:1px solid #2d6a30;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF50;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">CI pipeline — testflight-deploy.yml decode step for plist</span><span style="background:#1a4731;color:#4CAF50;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">✅ Done</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(244,67,54,0.10);border:1px solid #7a1f1a;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#F44336;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">BLE integration — all 3 devices tested, none detected by app</span><span style="background:#4a1c1c;color:#F44336;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🚫 Blocked</span></div>
+      </div>
     </div>
-    <span style="background:#3d2e00;color:#FF9800;border:1px solid #FF980033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🟡 ACTIVE</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
-      <div style="width:0%;height:100%;background:#FF9800;border-radius:2px;transition:width 0.5s;"></div>
-    </div>
-    <span style="font-size:10px;font-weight:700;color:#FF9800;font-family:monospace;white-space:nowrap;">0/3 (0%)</span>
-  </div>
-  <div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Build BarsysARK iOS — Cursor Build (see [FAREED + APAR] main ticket)</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div></div>
-</div>
 
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div class="org-avatar--new" style="width:32px;height:32px;font-size:11px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">AP</div>
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Apar</div>
-      <div style="font-size:10px;color:#706E6A;">Endpoint Audit · iOS ↔ Backend</div>
+    <!-- FAREED -->
+    <div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="org-avatar--new" style="width:32px;height:32px;font-size:11px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">FA</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Fareed</div>
+          <div style="font-size:10px;color:#706E6A;">iOS · feature/fareed-v4-sprint</div>
+        </div>
+        <span style="background:#4a1c1c;color:#F44336;border:1px solid #F4433633;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🔴 BLOCKED</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:45%;height:100%;background:#F44336;border-radius:2px;"></div></div>
+        <span style="font-size:10px;font-weight:700;color:#F44336;font-family:monospace;white-space:nowrap;">Code done · Testing blocked</span>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(244,67,54,0.10);border:1px solid #7a1f1a;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#F44336;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Apple SSO — change bundle ID to io.barsys.ark, sign with Barsys LLC</span><span style="background:#4a1c1c;color:#F44336;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🚫 Must Fix</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(244,67,54,0.10);border:1px solid #7a1f1a;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#F44336;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Wire BarBot + Craft + My Bar — remove placeholderTab() routing</span><span style="background:#4a1c1c;color:#F44336;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🚫 Must Fix</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix network error on tab switch (fetchCacheRecipes cancellation)</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix recipe detail from tiles — missing ingredients/description/story</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Wire Profile tab to full ProfileScreens (edit, history, settings)</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
+      </div>
     </div>
-    <span style="background:#1e1e1c;color:#706E6A;border:1px solid #706E6A33;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">⚪ STANDBY</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
-      <div style="width:0%;height:100%;background:#706E6A;border-radius:2px;transition:width 0.5s;"></div>
-    </div>
-    <span style="font-size:10px;font-weight:700;color:#706E6A;font-family:monospace;white-space:nowrap;">0/0 (0%)</span>
-  </div>
-  <div><div style="font-size:11px;color:#706E6A;padding:6px;">No active tasks</div></div>
-</div>
 
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div class="org-avatar--be" style="width:32px;height:32px;font-size:11px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">VM</div>
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Vova</div>
-      <div style="font-size:10px;color:#706E6A;">Backend · Defteros</div>
+    <!-- APAR -->
+    <div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="org-avatar--new" style="width:32px;height:32px;font-size:11px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">AP</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Apar</div>
+          <div style="font-size:10px;color:#706E6A;">Endpoint Audit · iOS ↔ Backend</div>
+        </div>
+        <span style="background:#1a4731;color:#4CAF50;border:1px solid #4CAF5033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">✅ COMPLETE</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:100%;height:100%;background:#4CAF50;border-radius:2px;"></div></div>
+        <span style="font-size:10px;font-weight:700;color:#4CAF50;font-family:monospace;white-space:nowrap;">Audit delivered</span>
+      </div>
+      <div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(76,175,80,0.10);border:1px solid #2d6a30;border-radius:4px;"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF50;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Full Endpoint Audit — 35 iOS ↔ Backend endpoints verified via Proxyman</span><span style="background:#1a4731;color:#4CAF50;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">✅ Done</span></div></div>
     </div>
-    <span style="background:#3d2e00;color:#FF9800;border:1px solid #FF980033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🟡 ACTIVE</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
-      <div style="width:0%;height:100%;background:#FF9800;border-radius:2px;transition:width 0.5s;"></div>
-    </div>
-    <span style="font-size:10px;font-weight:700;color:#FF9800;font-family:monospace;white-space:nowrap;">0/9 (0%)</span>
-  </div>
-  <div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix GET /recipes/{id} response shape — align to iOS contract</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix GET /recipes + /search — returning legacy DB data, not seed data</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix GET /recipes/categories — returning ingredient names, not category buckets</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(112,110,106,0.08);border:1px solid #3D3C3A;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#706E6A;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Up next: defteros-CRIT-01: SQL logout bug — token_hash= AND user_id= (+5 more)</span><span style="background:#1e1e1c;color:#706E6A;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">⬜ To Do</span></div></div>
-</div>
 
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div class="org-avatar--ai" style="width:32px;height:32px;font-size:11px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">HR</div>
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Harsh</div>
-      <div style="font-size:10px;color:#706E6A;">BarBot AI · Ingredient Arch</div>
+    <!-- VOVA -->
+    <div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="org-avatar--be" style="width:32px;height:32px;font-size:11px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">VM</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Vova</div>
+          <div style="font-size:10px;color:#706E6A;">Backend · Defteros</div>
+        </div>
+        <span style="background:#3d2e00;color:#FF9800;border:1px solid #FF980033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🟡 ACTIVE</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:33%;height:100%;background:#FF9800;border-radius:2px;"></div></div>
+        <span style="font-size:10px;font-weight:700;color:#FF9800;font-family:monospace;white-space:nowrap;">3/9 (33%)</span>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix GET /recipes/{id} — response shape misaligned to iOS contract</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix GET /recipes + /search — returning legacy DB data not seed data</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width-6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix GET /recipes/categories — ingredient names not category buckets</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(112,110,106,0.08);border:1px solid #3D3C3A;border-radius:4px;"><span style="width:6px;height:6px;border-radius:50%;background:#706E6A;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">defteros-CRIT-01: SQL logout bug (+5 more pending)</span><span style="background:#1e1e1c;color:#706E6A;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">⬜ To Do</span></div>
+      </div>
     </div>
-    <span style="background:#3d2e00;color:#FF9800;border:1px solid #FF980033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🟡 ACTIVE</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
-      <div style="width:36%;height:100%;background:#FF9800;border-radius:2px;transition:width 0.5s;"></div>
-    </div>
-    <span style="font-size:10px;font-weight:700;color:#FF9800;font-family:monospace;white-space:nowrap;">4/11 (36%)</span>
-  </div>
-  <div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">H-IA-02: Build category matcher for AI-generated recipes</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(66,165,245,0.10);border:1px solid #1a4a7a;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#42A5F5;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">H-IA-03: Wire station awareness into BarBot context (PR #7 — pending review)</span><span style="background:#1c3d5a;color:#42A5F5;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">👀 In Review</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(112,110,106,0.08);border:1px solid #3D3C3A;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#706E6A;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Up next: barbot-CRIT-02: SSRF — vision endpoint fetches user-supplied URLs (+4 more)</span><span style="background:#1e1e1c;color:#706E6A;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">⬜ To Do</span></div></div>
-</div>
 
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div class="org-avatar--design" style="width:32px;height:32px;font-size:11px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">ST</div>
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Sterin</div>
-      <div style="font-size:10px;color:#706E6A;">Design · On leave Apr 3</div>
+    <!-- HARSH -->
+    <div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="org-avatar--ai" style="width:32px;height:32px;font-size:11px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">HR</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Harsh</div>
+          <div style="font-size:10px;color:#706E6A;">BarBot AI · Ingredient Architecture</div>
+        </div>
+        <span style="background:#3d2e00;color:#FF9800;border:1px solid #FF980033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🟡 ACTIVE</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:36%;height:100%;background:#FF9800;border-radius:2px;"></div></div>
+        <span style="font-size:10px;font-weight:700;color:#FF9800;font-family:monospace;white-space:nowrap;">4/11 (36%)</span>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">H-IA-02: Category matcher for AI-generated recipes</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(66,165,245,0.10);border:1px solid #1a4a7a;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#42A5F5;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">H-IA-03: Station awareness in BarBot context (PR #7 — pending review)</span><span style="background:#1c3d5a;color:#42A5F5;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">👀 In Review</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(112,110,106,0.08);border:1px solid #3D3C3A;border-radius:4px;"><span style="width:6px;height:6px;border-radius:50%;background:#706E6A;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">barbot-CRIT-02: SSRF vision endpoint (+4 more)</span><span style="background:#1e1e1c;color:#706E6A;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">⬜ To Do</span></div>
+      </div>
     </div>
-    <span style="background:#3d2e00;color:#FF9800;border:1px solid #FF980033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🟡 ACTIVE</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
-      <div style="width:0%;height:100%;background:#FF9800;border-radius:2px;transition:width 0.5s;"></div>
-    </div>
-    <span style="font-size:10px;font-weight:700;color:#FF9800;font-family:monospace;white-space:nowrap;">0/3 (0%)</span>
-  </div>
-  <div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Fix copy errors in HTML screen designs (flagged by Thomas)</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">F03 BarBot — Audit + fix HTML design, deliver to Fareed</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div>
-<div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">F05 BLE — 2 Pending Screens (terminal failure + AI Thinking cancel CTA)</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div></div>
-</div>
 
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div class="org-avatar--design" style="width:32px;height:32px;font-size:11px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">RN</div>
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Ragini</div>
-      <div style="font-size:10px;color:#706E6A;">Design · F04 + F08 + Copy fixes</div>
+    <!-- STERIN -->
+    <div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="org-avatar--design" style="width:32px;height:32px;font-size:11px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">ST</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Sterin</div>
+          <div style="font-size:10px;color:#706E6A;">Design · On leave from Apr 3</div>
+        </div>
+        <span style="background:#1e1e1c;color:#706E6A;border:1px solid #706E6A33;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">⚪ ON LEAVE</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:0%;height:100%;background:#706E6A;border-radius:2px;"></div></div>
+        <span style="font-size:10px;font-weight:700;color:#706E6A;font-family:monospace;white-space:nowrap;">0/3 (0%)</span>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(112,110,106,0.08);border:1px solid #3D3C3A;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#706E6A;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">F03 BarBot — Audit + fix HTML design</span><span style="background:#1e1e1c;color:#706E6A;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">⬜ To Do</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(112,110,106,0.08);border:1px solid #3D3C3A;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#706E6A;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">F05 BLE — 2 pending screens (terminal failure + cancel CTA)</span><span style="background:#1e1e1c;color:#706E6A;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">⬜ To Do</span></div>
+      </div>
     </div>
-    <span style="background:#3d2e00;color:#FF9800;border:1px solid #FF980033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">🟡 ACTIVE</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
-      <div style="width:0%;height:100%;background:#FF9800;border-radius:2px;transition:width 0.5s;"></div>
-    </div>
-    <span style="font-size:10px;font-weight:700;color:#FF9800;font-family:monospace;white-space:nowrap;">0/1 (0%)</span>
-  </div>
-  <div><div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(255,152,0,0.10);border:1px solid #7a5c00;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#FF9800;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">F08 Profile & Settings — Finalize designs for Fareed</span><span style="background:#3d2e00;color:#FF9800;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">🔄 Active</span></div></div>
-</div>
 
-<div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <div class="org-avatar--lead" style="width:32px;height:32px;font-size:11px;border-radius:50%;
-      display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">MP</div>
-    <div style="flex:1;min-width:0;">
-      <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Mayank</div>
-      <div style="font-size:10px;color:#706E6A;">Execution Lead</div>
+    <!-- MAYANK -->
+    <div style="background:#232220;border:1px solid #3D3C3A;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="org-avatar--lead" style="width:32px;height:32px;font-size:11px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">MP</div>
+        <div style="flex:1;min-width:0;">
+          <div style="font-size:13px;font-weight:600;color:#E8E6E1;">Mayank</div>
+          <div style="font-size:10px;color:#706E6A;">Execution Lead · Audit</div>
+        </div>
+        <span style="background:#1a4731;color:#4CAF50;border:1px solid #4CAF5033;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">✅ COMPLETE</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;"><div style="width:100%;height:100%;background:#4CAF50;border-radius:2px;"></div></div>
+        <span style="font-size:10px;font-weight:700;color:#4CAF50;font-family:monospace;white-space:nowrap;">Audit complete</span>
+      </div>
+      <div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(76,175,80,0.10);border:1px solid #2d6a30;border-radius:4px;margin-bottom:3px;"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF50;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Full design vs build audit — F01–F10, 200 screens, 28 findings</span><span style="background:#1a4731;color:#4CAF50;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">✅ Done</span></div>
+        <div style="display:flex;align-items:center;gap:6px;padding:4px 6px;background:rgba(76,175,80,0.10);border:1px solid #2d6a30;border-radius:4px;"><span style="width:6px;height:6px;border-radius:50%;background:#4CAF50;flex-shrink:0;display:inline-block;"></span><span style="font-size:11px;color:#A09E99;flex:1;line-height:1.3;">Audit report published — <a href="https://mayankbarsys.github.io/barsys-ark-ios-audit/" style="color:#C4A882;">mayankbarsys.github.io/barsys-ark-ios-audit</a></span><span style="background:#1a4731;color:#4CAF50;font-size:9px;font-weight:600;padding:1px 5px;border-radius:3px;white-space:nowrap;">✅ Done</span></div>
+      </div>
     </div>
-    <span style="background:#1e1e1c;color:#706E6A;border:1px solid #706E6A33;font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;letter-spacing:0.8px;white-space:nowrap;">⚪ STANDBY</span>
-  </div>
-  <div style="display:flex;align-items:center;gap:8px;">
-    <div style="flex:1;height:4px;background:#2A2927;border-radius:2px;overflow:hidden;">
-      <div style="width:0%;height:100%;background:#706E6A;border-radius:2px;transition:width 0.5s;"></div>
-    </div>
-    <span style="font-size:10px;font-weight:700;color:#706E6A;font-family:monospace;white-space:nowrap;">0/2 (0%)</span>
-  </div>
-  <div><div style="font-size:11px;color:#706E6A;padding:6px;">No active tasks</div></div>
-</div>
+
   </div>
 </div>
 <!-- LIVE-STATUS-END -->
